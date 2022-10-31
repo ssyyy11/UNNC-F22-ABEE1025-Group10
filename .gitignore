@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 virt_env
+virt_env1
 
 # C extensions
 *.so
