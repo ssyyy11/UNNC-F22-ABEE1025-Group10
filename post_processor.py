@@ -40,7 +40,9 @@ def plot_1D_results(output_paths, plot_column_name,
 		ax.tick_params('x', labelrotation=45)
 		ax.set_xlabel('Time(%s to %s)'%(data_st_date, data_ed_date),
 				fontsize = fontsize)
-		ax.set_ylabel('y_axis_title',
+		ax.set_ylabel(y_axis_title,
+				fontsize = fontsize)
+		ax.set_title(plot_title,
 				fontsize = fontsize)
 		ax.legend(fontsize = fontsize)		
 		plt.savefig('./param_exp_1_plot.png')
