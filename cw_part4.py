@@ -23,7 +23,7 @@ def specification_unit_converter():
 											"unit converter,please follow the"
 											"following steps to use the converter:"
 								,font="Helvetic 12",wraplength=500,anchor="nw")
-	label_spec_unit_1 = tk.Label(root3,text="1.Click the Converter button to open"
+	label_spec_unit_1 = tk.Label(root3,text="1.Click the Converter button to open "
 											"the converter"
 								,font="Helvetic 12",wraplength=550,anchor="nw")
 	label_spec_unit_2 = tk.Label(root3,text="2.In the first combo bon,select the" 
