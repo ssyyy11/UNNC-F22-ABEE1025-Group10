@@ -384,7 +384,10 @@ def choose_unit_converter():
 	label_slogan.grid(row=0,column=0,sticky='nw')
 
 	box_choose_unit_class = ttk.Combobox(root)
-	box_choose_unit_class['value'] = ('Volume','Length','Area')
+	box_choose_unit_class['value'] = ('Volume','Length','Area','Temperature',
+										'Pressure','Energy','Power','Force',
+										'Velocity','Density','Mass concentration',
+										'Molarity','Surface tension','Viscosity')
 	box_choose_unit_class.current(0)
 	box_choose_unit_class.bind("<<ComboboxSelected>>", choose_unit_class)
 	box_choose_unit_class.grid(row=1,column=0,sticky='nw',ipadx=35)

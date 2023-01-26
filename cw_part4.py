@@ -62,7 +62,7 @@ menubar = tk.Menu(root)
 specification = tk.Menu(menubar,tearoff=1)
 menubar.add_cascade(label="Specification",font="Helvetic 12",
 						menu=specification)
-specification.add_command(label="Calculator",font="Helvetic 12",
+specification.add_command(label="U-value Calculator",font="Helvetic 12",
 							command=specification_u_calculator)
 specification.add_command(label="Units converter",font="Helvetic 12",
 							command=specification_unit_converter)

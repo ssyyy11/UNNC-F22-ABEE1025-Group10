@@ -181,7 +181,7 @@ def choose_u_calculator():
 	entry_λ4.grid(row=5,column=3)
 
 
-	label_R5 = tk.Label(root,text="R4",font="Hevetic 12")
+	label_R5 = tk.Label(root,text="R5",font="Hevetic 12")
 	label_R5.grid(row=6,column=0,pady=10)
 
 	box_choose_material5 = ttk.Combobox(root,width=5)
