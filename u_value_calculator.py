@@ -17,7 +17,7 @@ def choose_u_calculator():
 							"Rubber","Foam","Brick","Cement","Plaster",
 							"Concrete blocks","Concrete","Masonry","Stone",
 							"Wood","Zinc","Mortar","Timber Frame","Plywood"]
-		list_for_λ = ['0.5','0.2','1.4','1.2','1.05','0.17',',0.04','0.72',
+		list_for_λ = ['0.5','0.2','1.4','1.2','1.05','0.17','0.04','0.72',
 						'0.72','0.24','0.32','0.19','1.21','0.12','0.55',
 						'0.19','0.18','0.88','0.13','0.12']
 
@@ -69,8 +69,11 @@ def choose_u_calculator():
 		R3 = float(D3/λ3)
 		R4 = float(D4/λ4)	
 		R5 = float(D5/λ5)
-		
-		U = float(1/R1+R2+R3+R4+R5)
+
+		Rt = float(R1+R2+R3+R4+R5)
+		num = 1
+
+		U = float(num/Rt)
 		result = float(format(U,'.3f'))
 		data_out.set(result)
 		label_dataout.update()
