@@ -1,5 +1,5 @@
 #Date of the first creation: 2023-01-17
-#This file is for Engineering unit converter
+#This is a module file is for  unit converter
 import tkinter as tk
 from tkinter import ttk
 
@@ -9,6 +9,11 @@ def choose_unit_converter():
 	global data_out
 
 	def choose_unit_class(event):
+
+		''' This is the function that for class choose combobox.
+			it helps the unit1 and unit2 comboboxs change with the
+			different unit classes.'''
+
 
 		choose = box_choose_unit_class.get()
 		list_1 = []
@@ -374,7 +379,7 @@ def choose_unit_converter():
 		return result
 
 
-	'''Create the Window and some basic settings'''
+	'''Create the Window for converter and some foundation layout design'''
 	root = tk.Toplevel()
 	root.title("Engineering unit converter")
 	root.geometry('500x300')

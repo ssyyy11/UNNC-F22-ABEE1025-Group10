@@ -1,4 +1,5 @@
-5#Date of start:2023/1/26
+#Date of start:2023/1/26
+#This is the module file for U value calculator
 import tkinter as tk
 from tkinter import ttk
 
@@ -11,7 +12,10 @@ def choose_u_calculator():
 	global data_4
 	global data_5
 	global data_out
+
 	def choose_material(event):
+
+		'''This is the function for choosing material command'''
 
 		list_for_material = ["Asphalt","Bitumen","Ceramic","Clay","Glass",
 							"Rubber","Foam","Brick","Cement","Plaster",
@@ -49,6 +53,8 @@ def choose_u_calculator():
 
 	def calculate():
 
+		'''This is the function that for calculating command'''
+
 		D1 = float(entry_thickness1.get())
 		λ1 = float(entry_λ1.get())
 		
@@ -80,6 +86,9 @@ def choose_u_calculator():
 		print(result)
 
 		return result
+
+
+	''' Create the window for calculator and some foundation layout design'''
 
 	root = tk.Toplevel()
 	root.title("U-value Calculator")

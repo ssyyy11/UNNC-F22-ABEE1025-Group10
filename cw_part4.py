@@ -1,5 +1,5 @@
 #Date of the first creation: 2023-01-17
-#This file is for Engineering unit converter
+#This file is for Practical tools for Engineering
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -8,25 +8,64 @@ from unit_converter import *
 
 
 def specification_u_calculator():
+
+	'''This is the function that contains the specification 
+		for U-value calculator'''
+
 	root2 = tk.Toplevel()
 	root2.title("The specification of u-value calcuator")
 	root2.geometry("700x400")
-	label_spec_cal = tk.Label(root2,text="This is the specification of u-value calculator!"
-								,font="Helvetic 12")
-	label_spec_cal.pack()
+	label_spec_cal = tk.Label(root2,text="This is the specification of u-value"
+											"calculator,please follow the"
+											"following steps to use the calculator:"
+								,font="Helvetic 12",wraplength=500,anchor="nw")
+	label_spec_cal_1 = tk.Label(root2,text="1.Click the Calculator button to open "
+											"the calculator"
+								,font="Helvetic 12",wraplength=500,anchor="nw")
+	label_spec_cal_2 = tk.Label(root2,text="2.Select each layer of material in the "
+											"first combobox. the default λ value "
+											"will display in the third combobox"
+								,font="Helvetic 12",wraplength=550,anchor="nw")
+	label_spec_cal_3 = tk.Label(root2,text="3.If the actual λ value of the "
+											"material is inconsistent with the "
+											"default, you can modify in the third "
+											"combobox"
+								,font="Helvetic 12",wraplength=550,anchor="nw")
+	label_spec_cal_4 = tk.Label(root2,text="4.After material seletion, input the "
+											"thickness, note that the unit is m! "
+											"then, click the bottom right calculate "
+											"button,you can get the answer"
+								,font="Helvetic 12",wraplength=550,anchor="nw")
+	label_spec_cal_5 = tk.Label(root2,text="4.Note that this calcuator can only "
+											"calculate the U value published in "
+											"U = 1/Rt, if area or perimeter ratios "
+											"are involved, this calcuator cannot do "
+											"it"
+								,font="Helvetic 12",wraplength=550,anchor="nw")
+
+	label_spec_cal.grid(row=0,column=0,padx=5,pady=5,sticky='nw')
+	label_spec_cal_1.grid(row=1,column=0,padx=5,pady=5,sticky='nw')
+	label_spec_cal_2.grid(row=2,column=0,padx=5,pady=5,sticky='nw')
+	label_spec_cal_3.grid(row=3,column=0,padx=5,pady=5,sticky='nw')
+	label_spec_cal_4.grid(row=4,column=0,padx=5,pady=5,sticky='nw')
+	label_spec_cal_5.grid(row=5,column=0,padx=5,pady=5,sticky='nw')
 
 def specification_unit_converter():
+
+	'''	This is the function that contains the specification 
+		for unit converter'''
+
 	root3 = tk.Toplevel()
 	root3.title("The specification of unit converter")
 	root3.geometry("700x400")
-	label_spec_unit = tk.Label(root3,text="This is a manual on the engineering" 
+	label_spec_unit = tk.Label(root3,text="This is the specification of the engineering" 
 											"unit converter,please follow the"
 											"following steps to use the converter:"
 								,font="Helvetic 12",wraplength=500,anchor="nw")
 	label_spec_unit_1 = tk.Label(root3,text="1.Click the Converter button to open "
 											"the converter"
 								,font="Helvetic 12",wraplength=550,anchor="nw")
-	label_spec_unit_2 = tk.Label(root3,text="2.In the first combo bon,select the" 
+	label_spec_unit_2 = tk.Label(root3,text="2.In the first combobox,select the" 
 											"type of units you want to convert"
 								,font="Helvetic 12",wraplength=550,anchor="nw")
 	label_spec_unit_3 = tk.Label(root3,text="3.Enter the data to be converted"
