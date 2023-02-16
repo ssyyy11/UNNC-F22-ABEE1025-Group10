@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:./1ZoneUncontrolled_win_1.rvi
+ input file:./cw_part3_simulation_results/0.25_0.525/eplusout.eso
+ output file:./cw_part3_simulation_results/0.25_0.525/eplusout.csv
+ getting all vars from:./cw_part3_simulation_results/0.25_0.525/eplusout.eso
+  number variables requested for output=          12
+ ReadVars Run Time=00hr 00min  0.01sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:./1ZoneUncontrolled_win_1.mvi
+ input file:./cw_part3_simulation_results/0.25_0.525/eplusout.mtr
+ output file:./cw_part3_simulation_results/0.25_0.525/eplusmtr.csv
+ getting all vars from:./cw_part3_simulation_results/0.25_0.525/eplusout.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.01sec
+ ReadVarsESO program completed successfully.
